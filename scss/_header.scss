@@ -34,8 +34,7 @@
 
   // .header-main__item
 
-  &__item {
-  }
+  &__item {}
 
   // .header-main__btn
 
@@ -70,18 +69,25 @@
 
   // .header-main__info-user
 
-  &__info-user {
-  }
+  &__info-user {}
 
   // .header-main__btn-exit
 
-  &__btn-exit {
-  }
+  &__btn-exit {}
 }
 
 .header {
   // .header__logo
 
-  &__logo {
+  &__logo {}
+}
+
+@media (max-width: 1550px) {
+  .header-main {
+    &__btn {
+      font-size: 16px;
+      text-align: center;
+      padding: 10px;
+    }
   }
 }

@@ -18,6 +18,10 @@ if (isset($_POST['registration'])) {
     }
 
 }
+if (!empty($_SESSION['user']['name'])){
+    header("Location: ./lists/list_reg.php");
+    die();
+}
 
 ?>
 

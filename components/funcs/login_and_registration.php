@@ -82,16 +82,17 @@ function loginaout(): bool
         $_SESSION['errors'] = 'Логин или пароль введены неверно!';
         return false;
     } else {
-        //Вот код который доюавляет переменую роли
-        $Role = $pdo->prepare("SELECT role.role FROM `users` INNER JOIN `role` ON users.role_id = role.id WHERE users.email = ?");
-        $Role->execute([$email]);
-        $success_role = $Role->fetchColumn();
-        $_SESSION['user']['role'] = $success_role;
-       
+        
         $_SESSION['success'] = 'Вы успешно авторизовались';
         $_SESSION['user']['name'] = $user['name'];
         $_SESSION['user']['email'] = $user['email'];
-       
+        
+       //Вот код который доюавляет переменую роли
+       $Role = $pdo->prepare("SELECT role.role FROM `users` INNER JOIN `role` ON users.role_id = role.id WHERE users.email = ?");
+       $Role->execute([$email]);
+       $success_role = $Role->fetchColumn();
+       $_SESSION['user']['role'] = $success_role;
+      
         return true;
     }
 }

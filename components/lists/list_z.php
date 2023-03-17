@@ -35,24 +35,24 @@ if (isset($_GET['do']) && $_GET['do'] = 'exit') {
                 </div>
 
                 <div class="header-main__nav">
-                    <nav>
+                <nav>
                         <ul class="header-main__list">
                             <li class="header-main__item">
-                                <a href="./list_reg.php" class="header-main__btn btn"
+                                <a href="./list_reg.php" class="btn header-main__btn "
                                 >Регистрация заявки</a
                                 >
                             </li>
                             <li class="header-main__item">
                                 <a
                                         href="./list_active_applications.php"
-                                        class="header-main__btn btn"
+                                        class="btn header-main__btn "
                                 >Активные заявки</a
                                 >
                             </li>
                             <li class="header-main__item">
                                 <a
                                         href="./list_completed_applications.php"
-                                        class="header-main__btn btn"
+                                        class="btn header-main__btn "
                                 >Выполненные заявки</a
                                 >
                             </li>

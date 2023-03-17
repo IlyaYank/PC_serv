@@ -1,3 +1,18 @@
+<?php
+error_reporting(-1);
+session_start();
+
+require_once __DIR__ . './components/funcs/db.php';
+require_once __DIR__ . './components/funcs/login_and_registration.php';
+
+if (!empty($_SESSION['user']['name'])){
+    header("Location: ./components/lists/list_reg.php");
+    die();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
