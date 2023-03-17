@@ -24,6 +24,10 @@ if (isset($_GET['do']) && $_GET['do'] = 'exit') {
     header("Location: ./login_form.php");
     die();
 }
+if (!empty($_SESSION['user']['name'])){
+    header("Location: ./lists/list_reg.php");
+    die();
+}
 ?>
 
 
