@@ -1,0 +1,131 @@
+.body-login {
+  background: $main-bg-color;
+  position: relative;
+}
+
+.section {
+  // .section__login
+
+  &__login {
+    margin-top: 50px;
+    background: $main-bg-color;
+  }
+}
+
+.form {
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 30px;
+  background: $main-bg-color;
+
+  max-width: 100%;
+  max-height: 100%;
+  width: 400px;
+  box-shadow: 0 0 250px #000;
+}
+
+.form {
+  // .form__logo
+
+  &__logo {
+    margin-bottom: 30px;
+
+    .logo {
+      margin: 0 auto;
+      width: 100%;
+      width: 72px;
+      height: 72px;
+    }
+  }
+
+  &__title-h2 {
+    margin: 20px 0;
+    color: $first-text;
+    font-size: 34px;
+    font-family: $font-family_1;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__title-h22 {
+    margin: 20px 0;
+    color: $first-text;
+    font-size: 34px;
+    font-family: $font-family_1;
+    font-weight: 500;
+  }
+
+  &__forms-input {}
+
+  // .form__info
+
+  &__info {}
+
+  // .form__input-login
+
+  &__input-login {}
+
+  // .form__password
+
+  &__password {}
+
+  // .pass
+
+  &__input-pass {}
+
+  // .form__button
+
+  &__button {}
+}
+
+.role {
+  border: 1px solid #7e8ba3;
+  border-radius: 0px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.role option {
+  font-size: $font-size_1;
+  color: #000;
+
+}
+
+.list__z {
+  max-width: 170px;
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  padding: 8px 15px;
+  font-size: 20px;
+}
+
+.input_form_list_submit_end_application_z {
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+@media(max-width: 580px) {
+  .list__z {
+    max-width: 250px;
+
+  }
+
+  .input_form_list_submit_end_application_z {
+
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+
+
+}

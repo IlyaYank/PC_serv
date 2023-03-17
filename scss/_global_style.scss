@@ -1,0 +1,111 @@
+// Цвета сайта (кнопки, формы, задний фон и .т.д)
+$main-bg-color: #354152;
+// $body-bg: #5b5e63; // ВРЕМЕННАЯ ПЕРЕМЕННАЯ
+
+//Цвет текста и полей(input)
+$first-text: #7e8ba3;
+$white-color-text: #fff;
+
+//Размер текста
+$font-size_1: 16px;
+$font-size_2: 24px;
+$font-size_3: 40px;
+
+$font-family_1: Helvetica Neue;
+$base-line-height: 1.5;
+
+// Размеры сайта
+$background-site: #354152;
+
+.container {
+  max-width: 1970px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+// Кнопки на сайте стили
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 8px 50px;
+  background: #75d2aa;
+  width: 100%;
+  transition: all 0.3s;
+  color: $white-color-text;
+}
+
+.btn:hover {
+  background: linear-gradient(160deg, #a3eece 0%, #30a87e 100%);
+}
+
+//Поля ввода данных
+.input_text {
+  border: 1px solid $first-text;
+  border-radius: 0px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: $white-color-text;
+  &::placeholder {
+    color: $white-color-text;
+  }
+}
+
+//линя в шапки
+
+.line_bk {
+  padding: 0;
+  height: 3px;
+  border: none;
+  background: linear-gradient(160deg, #8ee4b9 0%, #185547 100%);
+}
+
+//лого
+
+.header__logo {
+  min-width: 72px;
+  height: 72px;
+}
+//Окна уведомления
+.alert {
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+.alert-danger {
+  position: relative;
+  color: $white-color-text;
+  text-align: center;
+  font-size: $font-size_2;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 5px;
+}
+.errors-alert {
+  border: 2px solid #ee0404;
+  background-color: #ee04041f;
+}
+.success-alert {
+  border: 2px solid #8ee4b9;
+  background-color: #30a87e2f;
+}
+
+.btn-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/close.svg");
+}
+
+.background-site {
+  background-color: $background-site;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
